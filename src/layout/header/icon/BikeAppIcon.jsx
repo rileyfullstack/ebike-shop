@@ -9,7 +9,8 @@ export default function BikeAppIcon() {
     display: 'flex', 
     alignItems: 'center', 
     justifyContent: 'center',
-    borderRadius: '8px'}}>
+    borderRadius: '8px',
+    }}>
         <ElectricBikeIconTwoTone sx={{fontSize: 34}}/>
     </Box>
   )
