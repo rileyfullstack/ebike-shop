@@ -7,18 +7,18 @@ import IconSecondryText from './IconSecondryText';
 export default function IconWrapper() {
   return (
     <Box>
-    <Box sx={{ 
-        display: 'flex', 
+      <Box sx={{
+        display: 'flex',
         alignItems: 'center',
-        gap: '8px', 
+        gap: '8px',
         mb: '0.5vh'
-    }}>
-      <BikeAppIcon/>
-      <IconText/>
-    </Box>
-    <Box>
-        <IconSecondryText/>
-    </Box>
+      }}>
+        <BikeAppIcon />
+        <IconText />
+      </Box>
+      <Box>
+        <IconSecondryText />
+      </Box>
     </Box>
   )
 }
