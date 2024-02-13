@@ -5,7 +5,7 @@ import ROUTES from './routesModel'
 const AppRouter = () => {
     return (
         <Router>
-            <Route path={ROUTES.HOME} element={''}/>
+            <Route path={ROUTES.HOME} element={''} />
         </Router>
     );
 };
