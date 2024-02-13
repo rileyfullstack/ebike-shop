@@ -2,11 +2,11 @@ import React, { Children } from 'react'
 import Header from './Header'
 import { Box } from '@mui/material';
 
-export default function Layout() {
+export default function Layout(props) {
   return (
     <Box>
       <Header />
-      <Children />
+      {props.children}
     </Box>
   )
 }

@@ -4,11 +4,11 @@ import Layout from "./layout/Layout";
 
 function App() {
   return (
-    <>
+    <div>
       <Layout>
-        <AppRouter />
+        {/* <AppRouter /> */}
       </Layout>
-    </>
+    </div>
   );
 }
 
