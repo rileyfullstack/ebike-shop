@@ -13,9 +13,10 @@ const useBikePosts = () => {
   //Add user axios later on
   const [bikePosts, setBikePosts] = useState([]);
 
-  useEffect(() => {
-    getAllBikePosts().then((data) => setBikePosts(data));
-  }, []);
+  const handleGetBikePosts = async () => {
+    const data = await getAllBikePosts();
+    setBikePosts(data);
+  };
 
   const handleAddBikePost = (bikePost) => {
     createBikePost(bikePost).then((data) => setBikePosts([...bikePosts, data]));
@@ -42,4 +43,17 @@ const useBikePosts = () => {
       setBikePosts(data)
     );
   };
+
+  return {
+    bikePosts,
+    handleGetBikePosts,
+    handleAddBikePost,
+    handleUpdateBikePost,
+    handleDeleteBikePost,
+    handleGetBikePostById,
+    handleGetBikePostByCategory,
+    handleGetBikePostsByPriceRange,
+  };
 };
+
+export default useBikePosts;
