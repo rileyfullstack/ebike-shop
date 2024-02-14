@@ -1,0 +1,3 @@
+Add functionality to the image of a bike post to send the user to the page of the bike post.
+Add functionality to the icon of the site to send the user to the home page.
+Add functionality to the icon of the user to send the user to the user page.
