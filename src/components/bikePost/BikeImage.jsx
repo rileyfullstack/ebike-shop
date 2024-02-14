@@ -1,17 +1,27 @@
-import { CardMedia, Box, CardActionArea } from '@mui/material'
-import React from 'react'
+import { CardMedia, Box, CardActionArea } from '@mui/material';
+import React from 'react';
 
 export default function BikeImage({ Image }) {
     return (
-
-        //For some reason all of them need 100% height to fill the container. Don't ask me why. Just keep it that way.
-        <Box sx={{ width: '240px', height: '240px' }}> {/* Container to control width and height */}
+        <Box sx={{ 
+            width: '240px', 
+            height: '240px',
+            overflow: 'hidden', // Ensures the borderRadius effect is contained
+            borderRadius: '12px', // Apply borderRadius here for the outer container
+            paddingTop: '15px',
+            paddingLeft: '15px'
+        }}>
             <CardActionArea sx={{ height: '100%' }}>
                 <CardMedia
                     component="img"
                     image={Image.url}
                     alt={Image.alt}
-                    sx={{ width: '100%', height: '100%'}} // Make image fully fill the container
+                    sx={{ 
+                        width: '100%', 
+                        height: '100%',
+                        borderRadius: '12px'
+                        // borderRadius applied to the container, not needed here
+                    }} // Make image fully fill the container
                 />
             </CardActionArea>
         </Box>
