@@ -15,7 +15,7 @@ export default function BikeImage({ Image }) {
                     component="img"
                     image={Image.url}
                     alt={Image.alt}
-                    sx={{ 
+                    sx={{
                         width: '100%', 
                         height: '100%',
                         borderRadius: '12px'

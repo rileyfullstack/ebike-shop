@@ -24,14 +24,16 @@ export default function BikePost({ bikePost }) {
                     variant='middle'
                     flexItem
                     sx={{
-                        paddingLeft:
+                        marginLeft:
                             '10px',
-                        paddingRight:
+                        marginRight:
                             '10px',
-                        width: '3px',
-                        borderRightWidth: '2px',
+                        borderRightWidth: '1px',
                         borderRightStyle: 'solid',
-                        borderColor: 'black'
+                        borderLeftWidth: '1px',
+                        borderLeftStyle: 'solid',
+                        borderColor: 'black',
+                        borderRadius: '10px',
                     }} />
             </Box>
         </Card>
