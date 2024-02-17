@@ -2,9 +2,11 @@ import React from 'react';
 import { Box, Button } from '@mui/material';
 import ElectricBikeIconTwoTone from '@mui/icons-material/ElectricBikeTwoTone';
 
+
 export default function BikeAppIcon() {
+
   return (
-    <Button component={Box} width={'45px'} height={'45px'}
+    <Button component={Box} width={'45px'} height={'45px'} 
       sx={{
         bgcolor: 'orange',
         '&:hover': {

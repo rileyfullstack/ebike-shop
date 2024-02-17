@@ -1,8 +1,10 @@
-import { Typography } from '@mui/material'
+import { Typography, useTheme } from '@mui/material'
 import React from 'react'
 import { Box } from '@mui/material'
 
 export default function BikePostContent({ bikePostPrice, bikePostTitle, bikePostShippingPrice }) {
+
+    const theme = useTheme();
 
     // Function to capitalize the first letter of each word
     const titleCase = (str) => {
@@ -42,11 +44,11 @@ export default function BikePostContent({ bikePostPrice, bikePostTitle, bikePost
                     ))}
                 </Box>
                 <Typography variant='h4' fontSize={"50px"} sx={{ paddingTop: "20px" }}>
-                    <Box component="span" sx={{ color: 'orange' }} fontSize={"20px"}>$USD</Box>
+                    <Box component="span" sx={{ color: theme.palette.primary.main }} fontSize={"20px"}>$USD</Box>
                     {bikePostPrice}
                 </Typography>
                 <Typography variant='h4' fontSize={"15px"}>
-                    Shipping price: <Box component="span" sx={{ color: 'orange', marginRight: '-2px', marginLeft: '2px' }} fontSize={"10px"}>$USD</Box> {bikePostShippingPrice}
+                    Shipping price: <Box component="span" sx={{ color: theme.palette.primary.main, marginRight: '-2px', marginLeft: '2px' }} fontSize={"10px"}>$USD</Box> {bikePostShippingPrice}
                 </Typography>
             </Box>
         </>
