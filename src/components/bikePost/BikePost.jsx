@@ -1,6 +1,7 @@
 import { Card, Divider, Box } from '@mui/material';
 import React from 'react';
 import BikeImage from './BikeImage';
+import BikePostContent from './BikePostContent';
 
 export default function BikePost({ bikePost }) {
     return (
@@ -30,6 +31,7 @@ export default function BikePost({ bikePost }) {
                         borderColor: 'black',
                         borderRadius: '10px',
                     }} />
+                <BikePostContent bikePostPrice={bikePost.Price} bikePostTitle={bikePost.Title} bikePostShippingPrice={bikePost.ShippingPrice}/>
             </Box>
         </Card>
     );

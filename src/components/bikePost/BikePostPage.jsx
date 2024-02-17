@@ -11,7 +11,7 @@ export default function BikePostPage() {
                 <LeftSidebar />
             </Box>
             <Box sx={{ flexGrow: 1 }}>
-                <BikePost bikePost={sellPost}/>
+                <BikePost bikePost={sellPost} />
             </Box>
         </Box>
     )

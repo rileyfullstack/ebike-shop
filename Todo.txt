@@ -1,3 +1,8 @@
 Add functionality to the image of a bike post to send the user to the page of the bike post.
 Add functionality to the icon of the site to send the user to the home page.
 Add functionality to the icon of the user to send the user to the user page.
+Add currencty type provider (USD, EUR, GBP), so its available around the application.
+Use the currencty type provider in the bike post page to show the price of the bike post in the currency type selected by the user.
+Add a user provider, so the user is available around the application.
+
+✔
