@@ -4,5 +4,6 @@ Add functionality to the icon of the user to send the user to the user page.
 Add currencty type provider (USD, EUR, GBP), so its available around the application.
 Use the currencty type provider in the bike post page to show the price of the bike post in the currency type selected by the user.
 Add a user provider, so the user is available around the application.
+Add implentation to the forum that a title of a bikepost must be 50-99 characters long.
 
 ✔

@@ -31,7 +31,11 @@ export default function BikePost({ bikePost }) {
                         borderColor: 'black',
                         borderRadius: '10px',
                     }} />
-                <BikePostContent bikePostPrice={bikePost.Price} bikePostTitle={bikePost.Title} bikePostShippingPrice={bikePost.ShippingPrice}/>
+                <BikePostContent
+                    bikePostPrice={bikePost.Price}
+                    bikePostTitle={bikePost.Title}
+                    bikePostShippingPrice={bikePost.ShippingPrice}
+                />
             </Box>
         </Card>
     );

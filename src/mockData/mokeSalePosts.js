@@ -3,7 +3,7 @@
 const sellPost = {
   _id: "625ef5e54072fe12b2a58d9f",
   SellerId: "625ef4c54072fe12b2a58c9f",
-  Title: "All-Terrain Mountain Bike",
+  Title: "All-Terrain Mountain Bike Great Suspension Long Lasting Tires High range Gear System",
   Description:
     "Rugged, reliable, and ready to take on any trail. Features include a lightweight frame, hydraulic disc brakes, and a 24-speed drivetrain.",
   Catagory: "Bicycles",
