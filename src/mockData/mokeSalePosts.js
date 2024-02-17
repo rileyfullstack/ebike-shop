@@ -1,6 +1,6 @@
 // mockSellPosts.js
 
-const sellPosts = [
+const sellPost = 
     {
       _id: "625ef5e54072fe12b2a58d9f",
       SellerId: "625ef4c54072fe12b2a58c9f",
@@ -11,10 +11,8 @@ const sellPosts = [
       CatagoryId: "1",
       SubcatagoryId: "1-1",
       Price: 1200.00,
-      Image: [
-        { Url: "https://example.com/image1.jpg", Alt: "Front view of the All-Terrain Mountain Bike" },
-        { Url: "https://example.com/image2.jpg", Alt: "Side view of the All-Terrain Mountain Bike" },
-      ],
+      Image:{
+        Url: "https://media.wired.com/photos/64c1a027a6c1fece8f4bb578/191:100/w_2580,c_limit/Aventon-Abound-Gear.jpg", Alt: "Front view of the All-Terrain Mountain Bike"},
       CurrentDiscount: 0.1, // 10% discount
       Specifications: {
         Frame: "Aluminum",
@@ -26,7 +24,7 @@ const sellPosts = [
       PostCreationDate: new Date("2023-04-15"),
       LastUpdatedDate: new Date("2023-04-18"),
     }
-  ];
+  ;
   
-  export default sellPosts;
+  export default sellPost;
   
