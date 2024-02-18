@@ -19,6 +19,9 @@ export default function ThemeProviders({ children }) {
       secondary: {
         main: 'rgb(238, 244, 212)', //beige color
       },
+      white : {
+        main: 'rgb(255, 255, 255)',
+      }
     },
   });
 

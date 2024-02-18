@@ -17,7 +17,7 @@ export default function BikeAppIcon() {
         justifyContent: 'center',
         borderRadius: '8px',
       }}>
-      <ElectricBikeIconTwoTone sx={{ fontSize: 34, color: 'white' }} />
+      <ElectricBikeIconTwoTone sx={{ fontSize: 34}} color='white'/>
     </Button>
   )
 }

@@ -11,6 +11,7 @@ export default function BikePost({ bikePost }) {
             height: '270px',
             flexDirection: 'column',
             border: '2px solid #555555',
+            borderLeft: '0',
             borderRadius: '0',
         }}>
             <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', height: '100%' }}>
