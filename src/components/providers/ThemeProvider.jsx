@@ -14,7 +14,7 @@ export default function ThemeProviders({ children }) {
     palette: {
       mode: 'light',
       primary: {
-        main: 'rgba(255, 165, 0, 0.85)',
+        main: 'rgba(255, 165, 0, 0.85)', //orange color
       },
       secondary: {
         main: 'rgb(238, 244, 212)', //beige color
