@@ -4,7 +4,7 @@ import { useCurrency  } from '../providers/CurrencyProvider';
 
 export default function CurrencyMenu() {
 
-    const { currencyType, setCurrencyType } = useCurrency();
+    const { setCurrencyType } = useCurrency();
     const theme = useTheme();
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
