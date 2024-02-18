@@ -1,8 +1,10 @@
 import { Button, Menu, MenuItem, Box, useTheme } from '@mui/material';
 import * as React from 'react'
+import { useCurrency  } from '../providers/CurrencyProvider';
 
 export default function CurrencyMenu() {
 
+    const { currencyType, setCurrencyType } = useCurrency();
     const theme = useTheme();
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
@@ -12,6 +14,12 @@ export default function CurrencyMenu() {
     const handleClose = () => {
         setAnchorEl(null);
     };
+    const handleChangeCurrency = (currency) => {
+        
+    }
+    const handleMenuItemClick = (currency) => {
+        handleClose();
+    }
 
     return (
         <Box sx={{backgroundColor: theme.palette.primary.main }}>
@@ -51,9 +59,9 @@ export default function CurrencyMenu() {
                     },
                 }}
             >
-                <MenuItem onClick={handleClose}>$USD (United States Dollar)</MenuItem>
-                <MenuItem onClick={handleClose}>€EUR (Euro)</MenuItem>
-                <MenuItem onClick={handleClose}>₪NIS (Israeli New Shekel)</MenuItem>
+                <MenuItem onClick={handleMenuItemClick}>$USD (United States Dollar)</MenuItem>
+                <MenuItem onClick={handleMenuItemClick}>€EUR (Euro)</MenuItem>
+                <MenuItem onClick={handleMenuItemClick}>₪NIS (Israeli New Shekel)</MenuItem>
             </Menu>
         </Box>
     )
