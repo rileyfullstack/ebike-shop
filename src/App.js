@@ -6,7 +6,7 @@ import Layout from "./layout/Layout";
 
 function App() {
   return (
-    <div>
+    <>
       <ThemeProviders>
         <UserProvider>
           <Layout>
@@ -14,7 +14,7 @@ function App() {
           </Layout>
         </UserProvider>
       </ThemeProviders>
-    </div>
+    </>
   );
 }
 
