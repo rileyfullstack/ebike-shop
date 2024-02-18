@@ -15,9 +15,10 @@ export default function CurrencyMenu() {
         setAnchorEl(null);
     };
     const handleChangeCurrency = (currency) => {
-        
+        setCurrencyType(currency);
     }
     const handleMenuItemClick = (currency) => {
+        handleChangeCurrency(currency);
         handleClose();
     }
 
@@ -59,9 +60,9 @@ export default function CurrencyMenu() {
                     },
                 }}
             >
-                <MenuItem onClick={handleMenuItemClick}>$USD (United States Dollar)</MenuItem>
-                <MenuItem onClick={handleMenuItemClick}>€EUR (Euro)</MenuItem>
-                <MenuItem onClick={handleMenuItemClick}>₪NIS (Israeli New Shekel)</MenuItem>
+                <MenuItem onClick={() => handleMenuItemClick('USD')}>$USD (United States Dollar)</MenuItem>
+                <MenuItem onClick={() => handleMenuItemClick('EUR')}>€EUR (Euro)</MenuItem>
+                <MenuItem onClick={() => handleMenuItemClick('NIS')}>₪NIS (Israeli New Shekel)</MenuItem>
             </Menu>
         </Box>
     )
