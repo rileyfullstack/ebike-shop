@@ -15,6 +15,7 @@ const useBikePosts = () => {
 
   const handleGetBikePosts = async () => {
     const data = await getAllBikePosts();
+    console.log(data);
     setBikePosts(data);
   };
 

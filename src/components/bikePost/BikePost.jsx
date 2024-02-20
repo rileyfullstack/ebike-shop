@@ -15,7 +15,7 @@ export default function BikePost({ bikePost }) {
             borderRadius: '0',
         }}>
             <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', height: '100%' }}>
-                <BikeImage Image={bikePost.Image} />
+                <BikeImage Image={bikePost.image} />
                 <Divider
                     orientation="vertical"
                     variant='middle'
@@ -33,9 +33,9 @@ export default function BikePost({ bikePost }) {
                         borderRadius: '10px',
                     }} />
                 <BikePostContent
-                    bikePostPrice={bikePost.Price}
-                    bikePostTitle={bikePost.Title}
-                    bikePostShippingPrice={bikePost.ShippingPrice}
+                    bikePostPrice={bikePost.price}
+                    bikePostTitle={bikePost.title}
+                    bikePostShippingPrice={1}
                 />
             </Box>
         </Card>
