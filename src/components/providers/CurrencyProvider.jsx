@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export const CurrencyContext = createContext();
 
 const CurrencyProvider = ({ children }) => {
-    const [currencyType, setCurrencyType] = useState('');
+    const [currencyType, setCurrencyType] = useState('USD');
 
     const calculatePriceByCurrency = (price) => {
         if (currencyType === 'USD') {
