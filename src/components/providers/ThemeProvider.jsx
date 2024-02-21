@@ -17,7 +17,7 @@ export default function ThemeProviders({ children }) {
         main: 'rgba(255, 165, 0, 0.85)', //orange color
       },
       secondary: {
-        main: 'rgb(238, 244, 212)', //beige color
+        main: 'rgba(238, 244, 212)', //beige color
       },
       white : {
         main: 'rgb(255, 255, 255)',
