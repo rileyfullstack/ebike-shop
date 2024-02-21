@@ -1,12 +1,19 @@
 import React from 'react';
 import { Box, Button } from '@mui/material';
 import ElectricBikeIconTwoTone from '@mui/icons-material/ElectricBikeTwoTone';
-
+import { useNavigate } from 'react-router-dom';
+import ROUTES from '../routes/routesModel';
 
 export default function BikeAppIcon() {
 
+  const navigate = useNavigate();
+
+  const handleBikeAppIconClick = () => {
+    navigate(ROUTES.HOME);
+  }
+
   return (
-    <Button component={Box} width={'45px'} height={'45px'} 
+    <Button component={Box} width={'45px'} height={'45px'} onClick={() => handleBikeAppIconClick()}
       sx={{
         bgcolor: 'orange',
         '&:hover': {

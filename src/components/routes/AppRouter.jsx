@@ -5,11 +5,9 @@ import BikePostPage from '../bikePost/BikePostPage';
 
 const AppRouter = () => {
     return (
-        <Router>
             <Routes>
                 <Route path={ROUTES.HOME} element={<BikePostPage/>} />
             </Routes>
-        </Router>
     );
 };
 

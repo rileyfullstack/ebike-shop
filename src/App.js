@@ -1,3 +1,4 @@
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import CurrencyProvider from "./components/providers/CurrencyProvider"; // Adjusted import to use CurrencyProvider
 import ThemeProviders from "./components/providers/ThemeProvider";
@@ -8,15 +9,17 @@ import Layout from "./layout/Layout";
 function App() {
   return (
     <>
-      <ThemeProviders>
-        <UserProvider>
-          <CurrencyProvider> 
-            <Layout>
-              <AppRouter />
-            </Layout>
-          </CurrencyProvider>
-        </UserProvider>
-      </ThemeProviders>
+      <BrowserRouter>
+        <ThemeProviders>
+          <UserProvider>
+            <CurrencyProvider>
+              <Layout>
+                <AppRouter />
+              </Layout>
+            </CurrencyProvider>
+          </UserProvider>
+        </ThemeProviders>
+      </BrowserRouter>
     </>
   );
 }
