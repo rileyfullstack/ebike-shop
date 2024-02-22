@@ -13,7 +13,6 @@ export default function BikePostPurchasePage() {
     useEffect(() => {
         handleGetBikePostById(id);
     }, [id]);
-    console.log(bikePosts);
 
     return (
         <Box sx={{
