@@ -31,8 +31,9 @@ const useBikePosts = () => {
     deleteBikePost(id);
   };
 
-  const handleGetBikePostById = (id) => {
-    getBikePostById(id);
+  const handleGetBikePostById = async (id) => {
+    const data = await getBikePostById(id);
+    setBikePosts([data]);
   };
 
   const handleGetBikePostByCategory = (category) => {

@@ -2,7 +2,6 @@ import React from 'react'
 import LeftSidebar from '../layout/LeftSidebar'
 import { Box } from '@mui/material'
 import BikePost from './BikePost'
-import sellPost from '../../mockData/mokeSalePosts'
 import useBikePosts from '../../hooks/useBikePosts'
 import { useEffect } from 'react'
 
