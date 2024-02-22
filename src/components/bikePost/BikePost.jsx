@@ -15,7 +15,7 @@ export default function BikePost({ bikePost }) {
             borderRadius: '0',
         }}>
             <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', height: '100%' }}>
-                <BikeImage Image={bikePost.image} />
+                <BikeImage Image={bikePost.image} imageSize={240} />
                 <Divider
                     orientation="vertical"
                     variant='middle'

@@ -1,11 +1,11 @@
 import { CardMedia, Box, CardActionArea } from '@mui/material';
 import React from 'react';
 
-export default function BikeImage({ Image }) {
+export default function BikeImage({ Image, imageSize }) {
     return (
         <Box sx={{
-            width: '240px',
-            height: '240px',
+            width: `${imageSize}px`, 
+            height: `${imageSize}px`,
             overflow: 'hidden',
             borderRadius: '12px',
             paddingLeft: '15px'
